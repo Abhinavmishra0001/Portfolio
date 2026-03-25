@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinav Mishra · Full Stack Developer & Data Analyst</title>
+  <meta name="description"
+    content="Abhinav Mishra — B.Tech CSE student at LPU building full-stack web apps and data-driven insights. Portfolio showcasing projects in Django, Python, and more." />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Particle Background -->
+  <div id="tsparticles"></div>
+
+  <!-- Grid Overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#training" class="nav-link" data-section="training">Training</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <!-- LEFT: Text -->
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+        <div class="hero-greeting">Hello, World! 👋</div>
+        <h1 class="hero-name">Abhinav<br /><span class="glow-cyan">Mishra</span></h1>
+        <div class="hero-typewriter">
+          <span class="typewriter-prefix">&#47;&#47;&nbsp;</span>
+          <span id="typed-output"></span>
+        </div>
+        <p class="hero-tagline">Building things that matter, one line at a time.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View My Work
+          </a>
+          <a href="#" class="btn btn-ghost" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Abhinavmishra0001" target="_blank" class="social-link" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/abhinav-mishra-a62618302/" target="_blank" class="social-link"
+            title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:abhinavmishra89222@gmail.com" class="social-link" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+916393697313" class="social-link" title="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Image -->
+      <div class="hero-image-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="glow-blob"></div>
+
+        <!-- Floating Tech Icons -->
+        <div class="float-icon float-1"><i class="fab fa-python" title="Python"></i></div>
+        <div class="float-icon float-2"><span class="icon-text">C++</span></div>
+        <div class="float-icon float-3"><i class="fas fa-database" title="MySQL"></i></div>
+        <div class="float-icon float-4"><i class="fas fa-server" title="Django"></i></div>
+
+        <div class="profile-ring-wrapper">
+          <div class="profile-ring"></div>
+          <!-- Replace src with your actual photo path -->
+          <img src="abhinav.PNG" alt="Abhinav Mishra" class="profile-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="section" id="about">
+    <div class="section-number">01</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-grid">
+        <!-- Code Block -->
+        <div class="code-block" data-aos="fade-right" data-aos-duration="900">
+          <div class="code-header">
+            <span class="code-dot red"></span>
+            <span class="code-dot yellow"></span>
+            <span class="code-dot green"></span>
+            <span class="code-filename">abhinav.py</span>
+          </div>
+          <pre class="code-content"><span class="kw">class</span> <span class="cls">Abhinav</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.name    = <span class="str">"Abhinav Mishra"</span>
+        self.role    = <span class="str">"Full Stack Developer"</span>
+        self.univ    = <span class="str">"LPU, Punjab"</span>
+        self.batch   = <span class="num">2027</span>
+        self.skills  = [
+            <span class="str">"Django"</span>, <span class="str">"Python"</span>,
+            <span class="str">"C++"</span>, <span class="str">"MySQL"</span>,
+            <span class="str">"Power BI"</span>, <span class="str">"MongoDB"</span>
+        ]
+        self.passion = <span class="str">"Building things that matter"</span>
+        self.coffee  = <span class="num">True</span>  <span class="cmt"># always</span>
+
+    <span class="kw">def</span> <span class="fn">say_hello</span>(self):
+        <span class="kw">return</span> <span class="str">"Let's build something amazing!"</span>
+
+<span class="cmt"># Initialize</span>
+dev = <span class="cls">Abhinav</span>()
+<span class="fn">print</span>(dev.say_hello())</pre>
+        </div>
+
+        <!-- Bio -->
+        <div class="about-bio" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
+          <h3 class="bio-title">Who am I?</h3>
+          <p class="bio-text">
+            I'm a Computer Science undergrad at <span class="accent-cyan">LPU</span> passionate about building
+            full-stack web apps and uncovering insights through data. I love turning
+            complex problems into clean, efficient solutions.
+          </p>
+          <p class="bio-text">
+            When I'm not coding, I'm exploring competitive programming, diving into
+            data analysis pipelines, or learning about the latest in tech. Currently
+            hunting for opportunities to make a real-world impact.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Punjab, India</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.Tech CSE · 2027</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>abhinavmishra89222@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span>+91-6393697313</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Badges -->
+      <div class="tech-badges" data-aos="fade-up" data-aos-delay="200">
+        <span class="badge"><i class="fas fa-server"></i> Django</span>
+        <span class="badge"><i class="fab fa-python"></i> Python</span>
+        <span class="badge"><span class="badge-icon">C++</span></span>
+        <span class="badge"><i class="fas fa-database"></i> MySQL</span>
+        <span class="badge"><i class="fas fa-chart-bar"></i> Power BI</span>
+        <span class="badge"><i class="fas fa-leaf"></i> MongoDB</span>
+        <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-number">02</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Arsenal</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Technologies I wield to craft digital
+        experiences</p>
+
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-category-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="85">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <div class="skill-name">Python</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="85"></div>
+              </div>
+              <div class="skill-pct">85%</div>
+            </div>
+            <div class="skill-card" data-skill="80">
+              <div class="skill-icon skill-text-icon">C++</div>
+              <div class="skill-name">C++</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80"></div>
+              </div>
+              <div class="skill-pct">80%</div>
+            </div>
+            <div class="skill-card" data-skill="88">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <div class="skill-name">HTML5</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="88"></div>
+              </div>
+              <div class="skill-pct">88%</div>
+            </div>
+            <div class="skill-card" data-skill="82">
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <div class="skill-name">CSS3</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="82"></div>
+              </div>
+              <div class="skill-pct">82%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div data-aos="fade-up" data-aos-delay="150">
+          <h3 class="skills-category-title"><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="78">
+              <div class="skill-icon"><i class="fas fa-server"></i></div>
+              <div class="skill-name">Django</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="78"></div>
+              </div>
+              <div class="skill-pct">78%</div>
+            </div>
+            <div class="skill-card" data-skill="82">
+              <div class="skill-icon"><i class="fas fa-table"></i></div>
+              <div class="skill-name">Pandas</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="82"></div>
+              </div>
+              <div class="skill-pct">82%</div>
+            </div>
+            <div class="skill-card" data-skill="75">
+              <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+              <div class="skill-name">NumPy</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="75"></div>
+              </div>
+              <div class="skill-pct">75%</div>
+            </div>
+            <div class="skill-card" data-skill="72">
+              <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="skill-name">Seaborn</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="72"></div>
+              </div>
+              <div class="skill-pct">72%</div>
+            </div>
+            <div class="skill-card" data-skill="74">
+              <div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+              <div class="skill-name">Matplotlib</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="74"></div>
+              </div>
+              <div class="skill-pct">74%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Databases -->
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skills-category-title"><i class="fas fa-tools"></i> Databases & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="80">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <div class="skill-name">MySQL</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80"></div>
+              </div>
+              <div class="skill-pct">80%</div>
+            </div>
+            <div class="skill-card" data-skill="68">
+              <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+              <div class="skill-name">MongoDB</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="68"></div>
+              </div>
+              <div class="skill-pct">68%</div>
+            </div>
+            <div class="skill-card" data-skill="70">
+              <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="skill-name">Power BI</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="70"></div>
+              </div>
+              <div class="skill-pct">70%</div>
+            </div>
+            <div class="skill-card" data-skill="85">
+              <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+              <div class="skill-name">Git</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="85"></div>
+              </div>
+              <div class="skill-pct">85%</div>
+            </div>
+            <div class="skill-card" data-skill="85">
+              <div class="skill-icon"><i class="fab fa-github"></i></div>
+              <div class="skill-name">GitHub</div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="85"></div>
+              </div>
+              <div class="skill-pct">85%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="section" id="projects">
+    <div class="section-number">03</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Things I've built that I'm proud of</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-play-circle"></i></div>
+              <div class="project-tag">Full Stack Web App</div>
+            </div>
+            <div class="project-meta">Jan – Feb 2026</div>
+            <h3 class="project-title">Netflix Clone</h3>
+            <p class="project-desc">
+              Django-based Netflix-inspired streaming platform with TMDB &amp; YouTube API integration,
+              OTP email authentication, watchlist, rating system, personalized profiles, and admin
+              dashboard with analytics and content moderation.
+            </p>
+            <div class="project-techs">
+              <span class="tech-badge">Django 4.2.7</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">TMDB API</span>
+              <span class="tech-badge">YouTube API</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Abhinavmishra0001" target="_blank" class="btn-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-virus"></i></div>
+              <div class="project-tag">Data Analysis &amp; Visualization</div>
+            </div>
+            <div class="project-meta">Feb – Apr 2025</div>
+            <h3 class="project-title">COVID-19 NYC Data Analysis</h3>
+            <p class="project-desc">
+              Analyzed COVID-19 trends across NYC boroughs using structured datasets. Forecasted
+              case surges and hospitalization trends through EDA. Built visual dashboards to
+              identify high-risk clusters and evaluate policy impacts.
+            </p>
+            <div class="project-techs">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Matplotlib</span>
+              <span class="tech-badge">Seaborn</span>
+              <span class="tech-badge">EDA</span>
+              <span class="tech-badge">Forecasting</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Abhinavmishra0001" target="_blank" class="btn-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRAINING SECTION
+  ============================================================ -->
+  <section class="section section-alt" id="training">
+    <div class="section-number">04</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Training</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Structured learning & intensive programs</p>
+
+      <div class="timeline" data-aos="fade-up" data-aos-delay="150">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">May – July 2025</div>
+            <h3 class="timeline-title">DSA &amp; Algorithms Training</h3>
+            <p class="timeline-subtitle"><i class="fas fa-building"></i> Algo Tutor · 3 Months</p>
+            <p class="timeline-desc">
+              Practiced advanced Data Structures &amp; Algorithms in C++.
+              Focused on time &amp; space complexity reduction and competitive coding submissions.
+            </p>
+            <div class="timeline-topics">
+              <span class="topic-chip">Graphs</span>
+              <span class="topic-chip">Trees</span>
+              <span class="topic-chip">Dynamic Programming</span>
+              <span class="topic-chip">Greedy</span>
+              <span class="topic-chip">Backtracking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+  ============================================================ -->
+  <section class="section" id="certifications">
+    <div class="section-number">05</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Validated skills &amp; achievements</p>
+
+      <div class="certs-grid">
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-name">Competitive Programming</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Algo Tutor</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> May 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-name">Privacy &amp; Security in Social Media</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Online</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> Aug 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-name">C++ Programming</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Codetantra</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> Jan 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <div class="cert-info">
+            <h3 class="cert-name">MySQL Database</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Codetantra</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> Apr 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+  ============================================================ -->
+  <section class="section section-alt" id="education">
+    <div class="section-number">06</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Education</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My academic journey</p>
+
+      <div class="edu-timeline" data-aos="fade-up" data-aos-delay="150">
+        <div class="edu-line"></div>
+
+        <!-- LPU -->
+        <div class="edu-item" data-aos="fade-right" data-aos-delay="150">
+          <div class="edu-node"></div>
+          <div class="edu-card">
+            <div class="edu-year">Aug 2023 – Present</div>
+            <h3 class="edu-degree">B.Tech — Computer Science &amp; Engineering</h3>
+            <p class="edu-institute"><i class="fas fa-university"></i> Lovely Professional University, Punjab</p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">CGPA</span>
+              <span class="cgpa-value">6.8</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Don Bosco Intermediate -->
+        <div class="edu-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="edu-node"></div>
+          <div class="edu-card">
+            <div class="edu-year">Mar 2021 – Mar 2023</div>
+            <h3 class="edu-degree">Intermediate (XII)</h3>
+            <p class="edu-institute"><i class="fas fa-school"></i> Don Bosco College</p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">Score</span>
+              <span class="cgpa-value">60%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Don Bosco Matriculation -->
+        <div class="edu-item" data-aos="fade-right" data-aos-delay="250">
+          <div class="edu-node"></div>
+          <div class="edu-card">
+            <div class="edu-year">Apr 2020 – Mar 2021</div>
+            <h3 class="edu-degree">Matriculation (X)</h3>
+            <p class="edu-institute"><i class="fas fa-school"></i> Don Bosco College</p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">Score</span>
+              <span class="cgpa-value">85%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section" id="contact">
+    <div class="section-number">07</div>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Contact</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Have a project in mind? Let's talk.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="contact-heading">Let's Connect</h3>
+          <p class="contact-text">
+            I'm always open to discussing new opportunities, exciting projects,
+            or just having a great tech conversation. Drop me a message!
+          </p>
+          <div class="contact-details">
+            <a href="mailto:abhinavmishra89222@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <span>abhinavmishra89222@gmail.com</span>
+            </a>
+            <a href="tel:+916393697313" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <span>+91-6393697313</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" data-aos="fade-left" data-aos-delay="150" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Social Strip -->
+      <div class="social-strip" data-aos="fade-up" data-aos-delay="200">
+        <a href="https://github.com/Abhinavmishra0001" target="_blank" class="social-strip-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/abhinav-mishra-a62618302/" target="_blank" class="social-strip-link"
+          title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:abhinavmishra89222@gmail.com" class="social-strip-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+916393697313" class="social-strip-link" title="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer" data-aos="fade-up" data-aos-delay="250">
+        <p>Built with 💙 by <span class="accent-cyan">Abhinav Mishra</span> · 2026</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
